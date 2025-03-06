@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Responsive Lightbox</title>
+</head>
+
+<body>
+    <h1>Image Gallery with Lightbox</h1>
+
+    <div class="gallery">
+        <img src="https://picsum.photos/id/1015/800/600" alt="Landscape 1">
+        <img src="https://picsum.photos/id/1018/600/800" alt="Portrait 1">
+        <img src="https://picsum.photos/id/1023/800/600" alt="Landscape 2">
+        <img src="https://picsum.photos/id/1025/600/800" alt="Portrait 2">
+        <img src="https://picsum.photos/id/1028/800/600" alt="Landscape 3">
+        <img src="https://picsum.photos/id/1033/600/800" alt="Portrait 3">
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <img src="" alt="Lightbox Image" class="lightbox-image" id="lightbox-image">
+            
+            <button class="lightbox-btn" id="prev-btn"><i class="fa-solid fa-chevron-left" id="chv_left"></i></button>
+            
+            <button class="lightbox-btn" id="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            
+            <button class="close-btn" id="close-btn"><i class="fa-solid fa-x"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
