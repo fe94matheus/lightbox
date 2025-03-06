@@ -1,0 +1,79 @@
+/* Lightbox styles */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 100%;
+}
+
+.lightbox-btn {
+    background-color: transparent;
+    font-size: 40px;
+    transition: background-color 0.3s;
+    border: none;
+    display: flex;
+    align-items: center;
+    color: transparent;
+}
+
+.lightbox-btn .fa-solid {
+    padding: 25px;
+    
+}
+
+#prev-btn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    justify-content: start;
+}
+
+#next-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    justify-content: end;
+}
+
+.close-btn {
+    position: absolute;
+    color: white;
+    top: 10px;
+    right: -70px;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.lightbox-btn:hover {
+    color: white;
+}
+
+.close-btn:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}

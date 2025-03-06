@@ -6,6 +6,8 @@ const nextBtn = document.getElementById('next-btn');
 const closeBtn = document.getElementById('close-btn');
 const galleryImages = document.querySelectorAll('.gallery img');
 
+console.log(galleryImages)
+
 let currentImageIndex = 0;
 
 // Open lightbox
@@ -16,7 +18,7 @@ function openLightbox(index) {
     lightbox.style.display = 'flex';
     
     // Disable scrolling on the body
-    //document.body.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
 }
 
 // Close lightbox
